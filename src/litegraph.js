@@ -6982,7 +6982,7 @@ LGraphNode.prototype.executeAction = function(action)
             }
 
             //select all Control A
-            if (e.keyCode == 65 && e.ctrlKey) {
+            if (e.keyCode == 65 && (e.metaKey || e.ctrlKey)) {
                 this.selectNodes();
                 block_default = true;
             }
